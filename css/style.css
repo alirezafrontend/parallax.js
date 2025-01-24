@@ -1,0 +1,86 @@
+@font-face {
+  font-family: "SangBleu";
+  src: url(../font/SangBleu\ Sunrise.woff2);
+}
+
+.sec2-2,
+.text-sec-5 > div:first-child,
+.text-sec4 {
+  font-family: SangBleu;
+}
+
+#footer-me {
+  width: 220px;
+  height: 175px;
+  position: absolute;
+  justify-content: flex-end;
+  align-items: center;
+  bottom: 10px;
+  right: 10%;
+  border-radius: 70px;
+  z-index: 50;
+
+  > div:nth-of-type(1) {
+    width: 50px;
+    height: 100%;
+    position: relative;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s;
+
+    > * {
+      > a {
+        > i {
+          font-size: 22px;
+          color: #F7D38D;
+        }
+      }
+    }
+
+    > div:nth-of-type(1) {
+      position: absolute;
+      top: 15%;
+      right: 20%;
+    }
+
+    > div:nth-of-type(2) {
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+      right: 20%;
+    }
+
+    > div:nth-of-type(3) {
+      position: absolute;
+      top: 70%;
+      right: 20%;
+    }
+  }
+
+  &:hover > div:nth-of-type(1) {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  > div:nth-of-type(2) {
+    width: 170px;
+    height: 170px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    > div {
+      width: 170px;
+      height: 170px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 3px solid #F7D38D;
+
+      > img {
+        width: 100%;
+      }
+    }
+  }
+}
