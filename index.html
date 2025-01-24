@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>parallax</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/output.css">
+</head>
+
+<body class="relative">
+  <header class="header px-1 py-2 lg:px-10 flex justify-between w-full fixed top-0 left-0 z-[999]">
+    <div class="logo py-5">
+      <svg class="w-[150px] lg:w-[181px] h-auto fill-white translate-y-1 transition-all duration-800 ease-out-expo"
+        width="181" height="122" viewBox="0 0 180.99 122.23">
+        <g class="transition-opacity duration-1000 ease-out-expo" id="bottom-baseline">
+          <path
+            d="m38.59,96.69h2.43c1.75,0,2.95,1.05,2.95,2.67s-1.2,2.67-2.95,2.67h-2.43v-5.33Zm2.37,4.31c1.06,0,1.75-.63,1.75-1.66s-.7-1.66-1.75-1.66h-1.13v3.3h1.13Z">
+          </path>
+          <path d="m49.77,101.03v.99h-4.13v-5.33h4.04v.99h-2.81v1.16h2.48v.96h-2.48v1.23h2.91-.01Z"></path>
+          <path
+            d="m51.1,101.5l.43-.93c.45.32,1.12.56,1.76.56.73,0,1.03-.24,1.03-.57,0-1-3.11-.31-3.11-2.29,0-.91.73-1.66,2.25-1.66.67,0,1.36.16,1.85.47l-.38.94c-.5-.28-1.01-.41-1.48-.41-.73,0-1.01.27-1.01.61,0,.98,3.11.3,3.11,2.26,0,.89-.74,1.66-2.27,1.66-.85,0-1.7-.25-2.18-.62h0Z">
+          </path>
+          <path
+            d="m64.35,98.63c0,1.19-.89,1.93-2.32,1.93h-1.07v1.47h-1.24v-5.33h2.31c1.43,0,2.32.74,2.32,1.93Zm-1.26,0c0-.59-.39-.93-1.13-.93h-1.01v1.85h1.01c.76,0,1.13-.34,1.13-.92Z">
+          </path>
+          <path d="m65.93,96.69h1.24v4.32h2.68v1.01h-3.92v-5.33Z"></path>
+          <path
+            d="m75.06,100.88h-2.48l-.48,1.14h-1.27l2.38-5.33h1.23l2.39,5.33h-1.3l-.48-1.14Zm-.39-.94l-.85-2.04-.85,2.04h1.7Z">
+          </path>
+          <path d="m78.12,96.69h1.24v5.33h-1.24v-5.33Z"></path>
+          <path
+            d="m80.97,101.5l.43-.93c.45.32,1.12.56,1.76.56.73,0,1.03-.24,1.03-.57,0-1-3.11-.31-3.11-2.29,0-.91.73-1.66,2.25-1.66.67,0,1.36.16,1.85.47l-.38.94c-.5-.28-1.01-.41-1.48-.41-.73,0-1.01.27-1.01.61,0,.98,3.11.3,3.11,2.26,0,.89-.74,1.66-2.27,1.66-.85,0-1.7-.25-2.18-.62h0Z">
+          </path>
+          <path d="m87.04,96.69h1.24v5.33h-1.24v-5.33Z"></path>
+          <path
+            d="m93.65,102.02l-1.03-1.48h-1.13v1.48h-1.24v-5.33h2.31c1.43,0,2.32.74,2.32,1.93,0,.8-.41,1.38-1.1,1.69l1.2,1.72h-1.33.01Zm-1.16-4.32h-1.01v1.86h1.01c.76,0,1.13-.35,1.13-.93s-.38-.93-1.13-.93Z">
+          </path>
+          <path
+            d="m96.19,101.5l.43-.93c.45.32,1.12.56,1.76.56.73,0,1.03-.24,1.03-.57,0-1-3.11-.31-3.11-2.29,0-.91.73-1.66,2.25-1.66.67,0,1.36.16,1.85.47l-.39.94c-.5-.28-1.01-.41-1.48-.41-.73,0-1.01.27-1.01.61,0,.98,3.11.3,3.11,2.26,0,.89-.74,1.66-2.27,1.66-.85,0-1.7-.25-2.18-.62h0Z">
+          </path>
+          <path
+            d="m108.32,100.88h-2.48l-.48,1.14h-1.27l2.38-5.33h1.23l2.39,5.33h-1.3l-.48-1.14Zm-.39-.94l-.85-2.04-.85,2.04h1.7Z">
+          </path>
+          <path
+            d="m111.09,99.68v-2.99h1.24v2.94c0,1.01.44,1.43,1.19,1.43s1.19-.41,1.19-1.43v-2.94h1.23v2.99c0,1.56-.9,2.43-2.42,2.43s-2.42-.87-2.42-2.43h0Z">
+          </path>
+          <path d="m118.97,97.7h-1.71v-1.01h4.66v1.01h-1.71v4.32h-1.24v-4.32Z"></path>
+          <path d="m128.16,96.69v5.33h-1.24v-2.18h-2.43v2.18h-1.24v-5.33h1.24v2.1h2.43v-2.1h1.24Z"></path>
+          <path d="m134.29,101.03v.99h-4.13v-5.33h4.04v.99h-2.81v1.16h2.48v.96h-2.48v1.23h2.91-.01Z"></path>
+          <path d="m140.95,96.69v5.33h-1.01l-2.66-3.23v3.23h-1.23v-5.33h1.02l2.65,3.23v-3.23h1.23Z"></path>
+          <path d="m144.01,97.7h-1.71v-1.01h4.66v1.01h-1.71v4.32h-1.24v-4.32Z"></path>
+          <path d="m148.31,96.69h1.24v5.33h-1.24v-5.33Z"></path>
+          <path
+            d="m157.32,102.6c-.35.42-.85.66-1.44.66-.79,0-1.35-.29-2.18-1.16-1.47-.18-2.49-1.28-2.49-2.74,0-1.59,1.24-2.76,2.93-2.76s2.93,1.16,2.93,2.76c0,1.25-.77,2.24-1.9,2.6.26.27.49.37.76.37.32,0,.62-.13.87-.39l.55.66h-.02Zm-3.19-1.53c.95,0,1.67-.7,1.67-1.71s-.72-1.71-1.67-1.71-1.67.7-1.67,1.71.72,1.71,1.67,1.71Z">
+          </path>
+          <path
+            d="m158.62,99.68v-2.99h1.24v2.94c0,1.01.44,1.43,1.19,1.43s1.2-.41,1.2-1.43v-2.94h1.23v2.99c0,1.56-.9,2.43-2.42,2.43s-2.42-.87-2.42-2.43h-.01Z">
+          </path>
+          <path d="m169.54,101.03v.99h-4.13v-5.33h4.04v.99h-2.81v1.16h2.48v.96h-2.48v1.23h2.91-.01Z"></path>
+          <path
+            d="m170.88,101.5l.42-.93c.45.32,1.12.56,1.76.56.73,0,1.03-.24,1.03-.57,0-1-3.11-.31-3.11-2.29,0-.91.73-1.66,2.25-1.66.67,0,1.36.16,1.85.47l-.38.94c-.5-.28-1.01-.41-1.48-.41-.73,0-1.01.27-1.01.61,0,.98,3.11.3,3.11,2.26,0,.89-.74,1.66-2.27,1.66-.85,0-1.7-.25-2.18-.62h0Z">
+          </path>
+        </g>
+        <g class="transition-opacity duration-500 ease-out-expo" id="top-baseline">
+          <path
+            d="m69.45,17.4c-.23-.59-.42-.97-.85-1.76l-1.51-2.71c-.44-.79-.67-1.14-1.04-1.66l2.32-1.28c2.11-1.16,4-.95,5.17,1.14,1.11,2.01.38,3.79-1.76,4.97l-2.32,1.28h0Zm1.58-1.11l.59-.32c1.09-.61,1.29-1.97.22-3.88-1.1-1.99-2.32-2.47-3.41-1.87l-.59.32,3.2,5.75h-.01Z">
+          </path>
+          <path
+            d="m77.81,13.05c-.16-.62-.28-1.02-.62-1.86l-1.14-2.88c-.33-.84-.52-1.21-.83-1.78l4.76-1.88-.22.97c-.85-.22-1.48-.07-1.99.12l-.68.26,1.11,2.8.4-.15c.44-.17.87-.34,1.6-.73l.14.35c-.79.22-1.24.39-1.66.57l-.4.15,1.24,3.12.61-.24c.88-.34,1.31-.59,2.3-1.53l-.04.87-4.58,1.81v.03Z">
+          </path>
+          <path
+            d="m85.13,10.32c-.08-.63-.17-1.04-.41-1.91l-.8-2.99c-.23-.87-.36-1.27-.61-1.86l2.37-.63c1.69-.45,3.28-.57,3.69.97.41,1.53-1.02,2.21-2.71,2.67l-.52.14.33,1.24c.23.87.36,1.27.61,1.86l-1.96.51h0Zm.96-3.82l.49-.13c.8-.21,1.38-.73,1.03-2-.34-1.27-1.09-1.43-1.89-1.22l-.5.13.86,3.22h.01Z">
+          </path>
+          <path
+            d="m92.45,5.37l-.29-2.05c-.13-.89-.21-1.3-.38-1.92l2.01-.29c.01.64.04,1.05.17,1.95l.29,2.05c.28,1.99.81,2.72,2.18,2.51,1.26-.18,1.78-.96,1.48-3.04l-.29-2.05c-.13-.89-.22-1.3-.38-1.92l.42-.06c.02.64.05,1.05.17,1.95l.29,2.05c.32,2.27-.28,3.22-1.97,3.46-1.87.27-3.34-.15-3.71-2.65h.02Z">
+          </path>
+          <path
+            d="m101.66,7.3c.04-.64.05-1.05,0-1.95l-.16-3.09c-.05-.9-.09-1.32-.21-1.94l2.03-.11c-.04.64-.05,1.05,0,1.96l.16,3.09c.05.9.09,1.31.21,1.94l-2.03.11h0Z">
+          </path>
+          <path
+            d="m106.53,5.1l1.25-.68c.29,1.52,1.09,2.7,2.27,2.74.7.02,1.11-.34,1.13-.94.02-.62-.66-1.08-2.1-2.09-1.5-1.05-2.08-1.59-2.05-2.57.03-1.08,1.04-1.59,2.2-1.55,1.17.04,2.1.54,2.96,1.81l-1.24.48c-.26-1.02-.68-2.06-1.83-2.09-.67-.02-1.06.31-1.07.73-.01.47.3.74,1.63,1.63,1.71,1.16,2.55,1.77,2.51,3.01-.04,1.27-1.09,1.84-2.28,1.81-1.5-.04-2.56-.66-3.38-2.27Z">
+          </path>
+          <path
+            d="m120.14,8.29c.25-.84.33-1.25.45-1.9l.81-4.53c-.36,1.16-.91,2.17-1.5,3l-1.07-.73c1.09-.73,2-1.66,2.58-2.73l1.71.3c-.26.87-.33,1.25-.45,1.9l-.55,3.05c-.12.65-.19,1.06-.24,1.94l-1.74-.31h0Z">
+          </path>
+          <path
+            d="m131.77,7.32c-.7,2.38-2.54,3.36-4.49,2.8-1.04-.3-1.71-.96-2.14-1.93l1.33-.18c.05.83.11,1.69.87,1.9.97.28,1.75-.66,2.32-2.37-.62.23-1.24.25-1.89.06-.99-.29-2.36-1.3-1.87-2.98.51-1.75,2.28-1.9,3.69-1.48,1.98.58,2.8,2.11,2.19,4.19Zm-3.98-2.21c-.44,1.51-.2,2.15.46,2.34.46.13.93.09,1.49-.12.71-2.47.94-3.67-.2-4-.75-.22-1.32.31-1.74,1.77h0Z">
+          </path>
+          <path
+            d="m133.08,11.79c.96-1.73,2.02-1.87,3.34-2.13,1.24-.25,2.03-.53,2.41-1.41.33-.79.15-1.49-.53-1.79-.69-.29-1.36-.02-1.6.55-.2.45-.09.94.36,1.36l-1.39.37c-.53-.66-.64-1.32-.38-1.92.47-1.07,2.04-1.02,3.23-.5,1.22.53,2.41,1.64,1.87,2.88-.56,1.3-1.99,1.15-3.17,1.09-1.71-.16-2.53-.12-3.38.75l2.51,1.04c.98.41,1.47.58,2.79.43l-1.16,1.39-4.91-2.11Z">
+          </path>
+          <path
+            d="m140.63,15.21c1.17-1.6,2.24-1.6,3.59-1.7,1.26-.09,2.09-.27,2.57-1.1.43-.74.33-1.46-.29-1.84-.65-.38-1.35-.19-1.66.34-.25.42-.21.92.19,1.4l-1.42.2c-.45-.72-.47-1.39-.14-1.95.59-1,2.15-.76,3.27-.1,1.14.67,2.19,1.92,1.49,3.09-.72,1.22-2.12.9-3.28.68-1.68-.37-2.5-.44-3.45.31l2.36,1.34c.92.54,1.39.76,2.71.78l-1.32,1.23-4.61-2.71h0Z">
+          </path>
+          <path d="m115.29,17.12h-16.64v.76h16.64v-.76Z"></path>
+        </g>
+        <g id="logo">
+          <path
+            d="m180.97,79.86c-.36-.09-.72-.22-1.08-.25-4.68-.47-9.35-1.11-14.04-1.33-4.32-.21-8.65.05-12.98.08-4.43.03-8.86,0-13.29.06-6.37.09-12.74.29-19.12.34-8.56.07-17.12.06-25.68.04-11.08-.03-22.16-.1-33.26-.17-4.47-.03-8.93-.09-13.4-.14-.32,0-.65-.04-1.15-.07,0-2.01-.04-3.91,0-5.81.1-3.6.17-7.2.41-10.79.5-7.76,1.01-15.53,1.68-23.28.46-5.24.57-10.52,1.94-15.65.08-.29.12-.61.1-.91-.09-1.97.25-4.01-1.3-5.69-1.77-1.93-3.1-1.8-3.88.71-.74,2.38-1.37,4.86-1.62,7.33-.57,5.38-.86,10.78-1.27,16.18-.16,2.17-.36,4.33-.52,6.5-.23,3.25-.59,6.5-.64,9.76-.05,3.22-.91,6.42-.27,9.66v.1c-.14,2.43-.26,4.87-.45,7.3-.11,1.51-.33,3.02-.51,4.56h-6.42c-.97,0-1.41-.62-1.19-1.58.11-.45.28-.93.25-1.39-.3-5.55.2-11.07.66-16.59.41-4.81.71-9.62,1.11-14.43.33-3.99.66-7.99,1.18-11.96.56-4.33,1.09-8.63-.41-12.89-.24-.69-1.63-1.63-2.32-1.45-1.19.28-2.22,1.44-2.32,2.67-.55,6.57-1.15,13.14-1.62,19.71-.76,10.81-1.43,21.63-2.13,32.44-.11,1.79-.17,3.57-.25,5.46-.5,0-.93.01-1.37,0-4.5-.15-8.93.26-13.35,1.2-2.83.61-5.73.83-8.59,1.26-1.31.2-2.6.48-3.9.73.01.17.03.34.04.5,8.91.9,17.89.67,26.84.87v1.37c0,3.27-.07,6.54-.03,9.81-.04,11.9-.06,18.71.07,22.12.07,1.65.61,3.34,1.28,4.87.68,1.54,2.6,1.44,3.39-.06.32-.62.57-1.34.59-2.03.07-2.14-.08-4.28.02-6.41.16-3.42.45-25.35.68-29.4,0-.06,0-.11.01-.17h7.78c.07.4-.13,1.85-.09,2.97.13,5.65,6.17,6.99,6.45,2.25.03-.45-.07-.22-.15.05.26-1.08.2-2.08.09-3.14-.07-.7-.01-1.4-.01-2.13h6.9c12.28.02,24.54.07,36.82.06,8.39-.01,16.78-.12,25.16-.19,4.26-.04,8.53-.04,12.78-.14,10.52-.26,21.07.26,31.58-.66,5.88-.51,11.76-.86,17.64-1.32,1.05-.08,2.1-.38,3.14-.59,0-.11,0-.22-.02-.34Z">
+          </path>
+          <path
+            d="m160.06,41.1c1.18.83,1.22,1.83,1.15,3.01-.09,1.72-.23,3.43-.23,5.15,0,3.19.09,6.39.16,9.58.11,5.01,1.31,9.74,3.63,14.19,1.02,1.97,3.61,3.1,5.78,2.57,2.49-.6,3.57-2.61,4.5-4.65.5-1.09.53-2.38.94-3.51.8-2.19.99-4.43.75-6.72-.04-.33-.11-.7-.28-.96-.26-.4-.65-.57-.92.02-.35.77-.73,1.54-.98,2.34-.61,1.94-1.07,3.92-1.75,5.83-.32.9-.93,1.73-1.55,2.46-.41.5-1.13.64-1.56-.06-.56-.89-1.24-1.79-1.46-2.78-1.35-5.85-1.92-11.79-1.85-17.79.03-2.79.23-5.56.28-8.35.02-1.02.43-1.69,1.3-2.1.64-.3,1.32-.6,2.02-.72,2.82-.5,5.63-.97,8.47-1.37,1.05-.15,1.62-.84,2.06-1.61.16-.28-.08-1.05-.38-1.27-.64-.47-1.42-.8-2.18-1.06-1.96-.67-3.96-.64-5.97-.3-1.77.3-3.52.73-5.49,1.14-.18-.98-.51-1.96-.53-2.94,0-1.31.17-2.64.34-3.95.15-1.15.4-2.3.64-3.44.2-1,.6-2,.64-3,.04-.86-.28-1.74-.48-2.61-.26-1.18-.64-1.46-1.8-1.44-1.96.03-3.36,1.19-3.64,3.57-.41,3.55-1.4,7.05-1.11,10.68.08,1.08.09,2.19-.05,3.25-.11.84-.35,1.76-.83,2.43-1.09,1.52-1.12,3.33.4,4.4h0Z">
+          </path>
+          <path
+            d="m54.22,70.57c.4.15.65.62,1.03.82,1.06.57,2.11,1.37,3.25,1.57,3.73.61,7-.6,9.75-3.14.94-.88,1.48-2.02,1.39-3.64-.85.17-1.6.28-2.33.48-1.14.31-2.26.81-3.42,1.02-1.26.23-2.55.32-3.83.27-1.02-.04-1.75-.72-2.02-1.75-.06-.22,0-.67.12-.72,1.18-.5,2.04-1.47,3.44-1.73,2.45-.44,4.89-1.19,7.21-2.12,1.94-.78,3.11-2.46,3.23-4.61.33-5.91-2.9-8.79-8.53-7.73-.77.14-1.57.55-2.29.43-1.08-.16-1.8.31-2.46.92-.72.67-1.48,1.38-1.92,2.23-1.36,2.57-2.63,5.2-3.81,7.87-1.07,2.43-.8,5.01-.3,7.52.18.9.4,1.91,1.49,2.33v-.03Zm8.56-16.59c.14-.17.7-.22.89-.08.95.67,1.91,1.36,2.75,2.17.57.56.37,1.27-.22,1.79-.35.3-.76.6-1.2.76-1.88.72-3.79,1.38-5.85,2.12.62-2.73,2.03-4.8,3.61-6.76h.02Z">
+          </path>
+          <path
+            d="m76.84,72.59c.76-.05,2.29-1.71,2.55-2.61.41-1.39.79-2.82,1.39-4.14.81-1.81,1.81-3.53,2.84-5.49.04.47.05.76.08,1.04.29,2.32.51,4.65.91,6.96.32,1.82,2.67,2.79,4.26,1.89,1.97-1.11,3.37-4.46,2.65-6.59-.13-.39-.66-.75-1.07-.93-.19-.08-.59.28-.89.46-.24.15-.48.32-.9.62,0-.86.02-1.5,0-2.14-.08-2.53.98-5,.42-7.54-.14-.65-.42-1.39-.89-1.8-1.37-1.18-2.43-1.18-3.84-.05-1.15.93-2.18,2.02-3.28,3.05-.27-.56-.55-1.2-.89-1.81-.43-.74-.98-1.34-1.94-1.22-.89.11-2.17,1.26-2.28,2.09-.64,4.57-1.27,9.15-1.85,13.72-.08.63-.03,1.3.09,1.93.2,1.12,1.82,2.63,2.65,2.56Z">
+          </path>
+          <path
+            d="m95.88,71.93c1.27.93,3.62,0,3.83-1.58.51-3.72,2.75-6.67,4.13-9.75.35,2.51.67,5.17,1.13,7.81.28,1.62,2.43,2.63,3.94,2.02,2.1-.85,3.83-4.7,2.98-6.79-.16-.4-.68-.74-1.1-.91-.19-.08-.57.31-.87.49-.26.16-.54.32-.84.5,0-1.07.03-2.02,0-2.96-.08-2.18.92-4.25.44-6.52-.21-1.01-.48-1.72-1.31-2.18-.93-.51-1.93-1.03-2.93-.17-1.31,1.12-2.57,2.29-3.82,3.41-.32-.62-.59-1.46-1.12-2.07-.42-.46-1.18-.89-1.77-.89-1.06,0-2.15,1.37-2.29,2.48-.14,1.08-.35,2.14-.49,3.22-.46,3.67-.92,7.33-1.33,11.01-.13,1.2.46,2.16,1.43,2.88h-.01Z">
+          </path>
+          <path
+            d="m117.67,72.33c1.62.53,3.29.57,4.64-.65,1.08-.97,2.06-2.06,2.96-3.2.98-1.24,1.81-2.61,2.68-3.88.69,1.23,1.27,2.45,2.03,3.55.71,1.03,1.78,1.57,3.09,1.47,1.13-.08,1.47-.71.93-1.67-.24-.44-.48-.9-.68-1.36-1.56-3.46-1.23-7.08-.59-10.61.26-1.47-.22-2.39-1-3.35-1.09-1.34-3.42-1.64-4.85-.69-3.66,2.42-6.23,5.74-7.97,9.71-.15.34-.29.7-.53.98-1.37,1.68-1.94,3.73-2.55,5.72-.5,1.65.43,3.5,1.87,3.98h-.03Zm9.84-16.32c.09,2.77-5.21,11.6-7.67,12.58,2.11-4.59,3.9-9.12,7.67-12.58Z">
+          </path>
+          <path
+            d="m140.05,58.36c-.04,2.16-.17,4.32-.14,6.47.02,1.8.24,3.59.35,5.39.07,1.18.88,2.1,2.11,2.36,1.13.24,1.55-.63,1.85-1.38.86-2.14,1.64-4.31,2.42-6.48.97-2.74,1.59-5.59,3.4-8,1.13-1.49,2.15-2.03,3.84-1.4,1.04.39,1.61-.09,2.11-.94-.11-.21-.26-.42-.36-.67-1-2.44-3.46-3.32-5.79-2.05-1.5.83-2.58,2.08-3.4,3.57-.42.76-.91,1.48-1.38,2.22-.09-.03-.18-.06-.28-.09,0-.29.03-.6,0-.89-.1-.89-.1-1.83-.38-2.67-.52-1.54-2.22-1.8-3.39-.69-.93.88-1.3,1.83-1.08,3.08.12.7.13,1.42.12,2.13v.02Z">
+          </path>
+        </g>
+      </svg>
+    </div>
+    <nav class="nav hidden lg:block w-[70%]">
+      <ul class="text-white flex justify-end items-center gap-3">
+        <li class="relative px-10 py-2 border-[1px] rounded-[18px] cursor-pointer  text-white">
+          <a href="#" class="relative z-10">Espace professionnel</a>
+        </li>
+        <li class="relative px-6 py-2 border-[1px] rounded-[18px] text-white cursor-pointer ">
+          <a href="#" class="relative z-10">
+            FR
+          </a>
+          <i class="fa fa-chevron-down relative z-10"></i>
+        </li>
+      </ul>
+    </nav>
+    <div class="menu flex gap-3 justify-c py-2 w-[20%] lg:w-[10%]">
+      <a href="#" class="text-white">
+        Menu
+      </a>
+      <div class="line flex flex-col justify-center items-center gap-[8px] w-[30px] h-[30px] cursor-pointer">
+        <span class="w-[30px] h-[2px] bg-white"></span>
+        <span class="w-[30px] h-[2px] bg-white"></span>
+      </div>
+    </div>
+  </header>
+  <main class="main w-full h-[10700px]">
+    <!-- bg1 -->
+    <div class="bg-1 w-full h-screen bg-[#20201E] fixed top-0 left-0">
+      <div class="bg-content w-full lg:w-[80%] absolute top-[25%] left-[50%] -translate-x-1/2 z-20">
+        <h1 class="w-full text-[40px] lg:text-[90px] line text-white leading-[45px] lg:leading-[90px] text-center">
+          Hennart</h1>
+        <h2 class="w-full text-[40px] lg:text-[90px] text-white leading-[45px] lg:leading-[90px] text-center">
+          sélectionne pour
+          vous</h2>
+        <h2 class="w-full text-[40px] lg:text-[90px] text-[#F7D38D] leading-[45px] lg:leading-[90px] text-center">les
+          meilleurs
+          fromages</h2>
+        <h2 class="w-full text-[40px] lg:text-[90px] line text-white leading-[45px] lg:leading-[90px] text-center">de
+          nos régions.</h2>
+      </div>
+      <picture class="w-full">
+        <img class="fixed bottom-0 left-0 w-full h-[50%] lg:h-auto object-cover" src="img/sec-1/hennart-hp-hero.webp"
+          alt="">
+      </picture>
+    </div>
+    <!-- sec2 -->
+    <div
+      class="sec2 flex flex-col gap-[40px] md:gap-[20px] px-5 md:px-20 w-full h-[130%] py-3 bg-[#F9EFDB] fixed top-full left-0">
+      <div class="Depuis w-full flex justify-center mt-14">
+        <svg class="absolute top-[55px]" width="131" height="58" viewBox="0 0 131 58" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M130.5 29C130.5 32.8407 128.744 36.5377 125.491 39.9427C122.236 43.3503 117.502 46.4418 111.613 49.0489C99.8374 54.2626 83.5343 57.5 65.5 57.5C47.4657 57.5 31.1626 54.2626 19.3869 49.0489C13.4984 46.4418 8.76416 43.3503 5.50885 39.9427C2.25597 36.5377 0.5 32.8407 0.5 29C0.5 25.1593 2.25597 21.4623 5.50885 18.0573C8.76416 14.6497 13.4984 11.5582 19.3869 8.9511C31.1626 3.73742 47.4657 0.5 65.5 0.5C83.5343 0.5 99.8374 3.73742 111.613 8.9511C117.502 11.5582 122.236 14.6497 125.491 18.0573C128.744 21.4623 130.5 25.1593 130.5 29Z"
+            stroke="#2D2D29" style="stroke-dashoffset: 76.1406; stroke-dasharray: 304.962px, 0.2px;"></path>
+        </svg>
+        Depuis 1922
+      </div>
+      <div class="sec2-2 flex flex-wrap justify-between">
+        <div class="sec2-txt-l w-full md:w-[45%] opacity-0">
+          <p class="text-[30px] lg:text-[80px]">Savoir-faire </p>
+          <p class="text-[30px] lg:text-[80px]">Excellence</p>
+          <p class="text-[30px] lg:text-[80px]">Passion</p>
+        </div>
+        <div class="sec-2-img w-full md:w-[45%] mt-12 mr-6">
+          <img class="franc absolute top-[48%] md:top-[40%] -right-[15%] w-[100px] lg:w-[200px]"
+            src="img/sec-2/flap-entreprise-francaise.svg" alt="">
+          <img class="pere absolute top-[30%] md:top-[20%] -right-[15%] w-[100px] lg:w-[200px]"
+            src="img/sec-2/flap-pere-en-fils.svg" alt="">
+          <img src="img/sec-2/meule-coupee.svg" alt="">
+        </div>
+        <div class="w-full flex flex-wrap flex-row-reverse md:flex-row">
+          <div class="w-full md:w-[45%] flex justify-center lg:justify-start items-center">
+            <button class="bg-[#F7D38D] px-10 py-5 rounded-[60px] flex justify-between gap-2">
+              <svg width="19" height="19" class="fill-foreground" viewBox="0 0 18.9 19.1">
+                <path
+                  d="m18.9,8.55h0s0,0,0,0c-2.41,0-4.13-1.19-5.33-2.76-1.22-1.59-1.87-3.53-2.08-4.81l-.16-.99-1.97.33.16.99c.25,1.53,1.01,3.79,2.47,5.69.42.55.92,1.07,1.47,1.54H0v2h13.45c-.55.47-1.05.99-1.47,1.54-1.46,1.91-2.21,4.17-2.47,5.69l-.16.99,1.97.33.16-.99c.21-1.27.86-3.21,2.08-4.81,1.2-1.57,2.92-2.76,5.33-2.76h0v-2h0s0,0,0,0Z">
+                </path>
+              </svg>
+              <a href="#">En savoir plus</a>
+            </button>
+          </div>
+          <div class="w-full md:w-[45%] hidden lg:block">
+            <p class="px-20 text-[18px]">Hennart sélectionne, affine, transforme et valorise chaque
+              jour dans ses caves,
+              des fromages fermiers et
+              artisanaux afin de donner le plaisir à ses clients de vendre des produits d’exception et au consommateur
+              de
+              déguster des fromages aux arômes inédits et exclusifs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- sec3 -->
+    <div class="sec3 w-full h-screen fixed top-full left-0">
+      <img class="w-full object-cover" src="img/sec-3/hennart-front-page-banner.webp" alt="">
+    </div>
+    <!-- sec4 -->
+    <div class="sec4 bg-[#F7D38D] w-full h-screen fixed top-full left-0 flex flex-wrap justify-center gap-[5px] pb-8">
+      <div class="logo-sec4 w-full h-[50px] relative">
+        <img class="img-sec4 w-[180px] absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0"
+          src="img/sec-4/flap-fromages-caractere.svg" alt="">
+      </div>
+      <div class="text-sec4 w-[80%]">
+        <h3 class="text-[40px] md:text-[110px] text-center leading-[120px]">Partager notre amour
+          du fromage
+        </h3>
+      </div>
+      <div class="p-sec4 w-full flex justify-center">
+        <p class="text-[20px] w-[40%] text-center">C'est pour vous garantir les meilleurs produits que nous rendons
+          visite
+          régulièrement à des
+          producteurs aux
+          quatre coins de la France. Nous défendons un terroir, des Hommes, des savoir-faire pour vous proposer une
+          sélection de fromages fabriqués principalement par des producteurs fermiers et artisanaux.</p>
+      </div>
+      <div class="flex justify-center items-center gap-[10px] bg-white py-2 px-16 rounded-[60px] cursor-pointer">
+        <svg width="19" height="19" class="fill-foreground" viewBox="0 0 18.9 19.1">
+          <path
+            d="m18.9,8.55h0s0,0,0,0c-2.41,0-4.13-1.19-5.33-2.76-1.22-1.59-1.87-3.53-2.08-4.81l-.16-.99-1.97.33.16.99c.25,1.53,1.01,3.79,2.47,5.69.42.55.92,1.07,1.47,1.54H0v2h13.45c-.55.47-1.05.99-1.47,1.54-1.46,1.91-2.21,4.17-2.47,5.69l-.16.99,1.97.33.16-.99c.21-1.27.86-3.21,2.08-4.81,1.2-1.57,2.92-2.76,5.33-2.76h0v-2h0s0,0,0,0Z">
+          </path>
+        </svg>
+        <a href="#">Voir tous les produits</a>
+      </div>
+      <img class="sec4-img1 absolute top-[110%] left-1/2 -z-10" src="img/sec-4/hennart-hp-partager-amour-1.webp "
+        alt="">
+      <img class="sec4-img2 absolute top-[130%] right-0 -z-10" src="img/sec-4/hennart-hp-partager-amour-2.webp" alt="">
+      <img class="sec4-img3 absolute top-[150%] left-0 -z-10" src="img/sec-4/hennart-hp-partager-amour-3.webp" alt="">
+      <img class="sec4-img4 absolute top-[170%] left-[22%] -z-10" src="img/sec-4/hennart-hp-partager-amour-4.webp"
+        alt="">
+    </div>
+    <!-- sec5 -->
+    <div class="sec5 bg-[#F9EFDB] w-full h-screen fixed top-full left-0 flex flex-wrap justify-center gap-[5px] pb-8">
+      <div class="w-full h-[30%] flex justify-center items-center">
+        <svg class="absolute top-[15%] left-1/2 -translate-x-1/2 -translate-y-1/2" width="131" height="58"
+          viewBox="0 0 131 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M130.5 29C130.5 32.8407 128.744 36.5377 125.491 39.9427C122.236 43.3503 117.502 46.4418 111.613 49.0489C99.8374 54.2626 83.5343 57.5 65.5 57.5C47.4657 57.5 31.1626 54.2626 19.3869 49.0489C13.4984 46.4418 8.76416 43.3503 5.50885 39.9427C2.25597 36.5377 0.5 32.8407 0.5 29C0.5 25.1593 2.25597 21.4623 5.50885 18.0573C8.76416 14.6497 13.4984 11.5582 19.3869 8.9511C31.1626 3.73742 47.4657 0.5 65.5 0.5C83.5343 0.5 99.8374 3.73742 111.613 8.9511C117.502 11.5582 122.236 14.6497 125.491 18.0573C128.744 21.4623 130.5 25.1593 130.5 29Z"
+            stroke="#2D2D29" style="stroke-dashoffset: 76.1406; stroke-dasharray: 304.962px, 0.2px;"></path>
+        </svg>
+        Nos valeurs
+      </div>
+      <div class="text-sec-5 h-[70%] w-[80%]">
+        <div class="flex justify-center items-center w-full">
+          <div class="w-[300px] h-[150px] rounded-[70px] overflow-hidden">
+            <video src="img/sec-5/hennart-hp-video-1.mp4" autoplay muted loop></video>
+          </div>
+          <h3 class="text-[90px]">Travailler dans</h3>
+        </div>
+        <div class="flex justify-center items-center w-full">
+          <h3 class="text-[110px]">le respect des Hommes</h3>
+        </div>
+        <div class="flex justify-center items-center w-full">
+          <h3 class="text-[90px]">et de la planète</h3>
+          <div class="w-[300px] h-[150px] rounded-[70px]  overflow-hidden">
+            <video src="img/sec-5/hennart-hp-video-2.mp4" autoplay muted loop></video>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- sec6 -->
+    <div class="sec-6 bg-[#F9EFDB] w-full h-screen fixed top-full left-0 flex flex-wrap justify-center gap-[5px] pb-8">
+      <div class=" box w-full h-scree relative">
+        <div
+          class="box1 bg-[#D6D7D3] w-[90%] h-[65%] flex flex-wrap md:flex-nowrap absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-lg px-8 py-6">
+          <span
+            class="num-box w-[30px] h-[30px] border-[1px] border-black rounded-full flex justify-center items-center">1</span>
+          <div class="box-l w-full md:w-[70%] h-full flex flex-wrap items-center gap-5 px-20">
+            <h3 class="text-[30px] md:text-[50px] leading-[60px] w-[80%]">Une équipe de passionnés à votre service</h3>
+            <p class="w-[80%] hidden md:block">Nous échangeons régulièrement avec nos fournisseurs et nos clients pour
+              maintenir la
+              qualité de nos
+              produits et de nos services. De la sélection à la mise en rayon, nos commerciaux vous accompagnent à
+              chaque étape.
+            </p>
+            <button class="bg-white rounded-[40px] px-14 py-8 hidden md:block>
+              <a href=" #" class="flex gap-[10px] items-center">
+              <svg width="19" height="19" class="fill-foreground" viewBox="0 0 18.9 19.1">
+                <path
+                  d="m18.9,8.55h0s0,0,0,0c-2.41,0-4.13-1.19-5.33-2.76-1.22-1.59-1.87-3.53-2.08-4.81l-.16-.99-1.97.33.16.99c.25,1.53,1.01,3.79,2.47,5.69.42.55.92,1.07,1.47,1.54H0v2h13.45c-.55.47-1.05.99-1.47,1.54-1.46,1.91-2.21,4.17-2.47,5.69l-.16.99,1.97.33.16-.99c.21-1.27.86-3.21,2.08-4.81,1.2-1.57,2.92-2.76,5.33-2.76h0v-2h0s0,0,0,0Z">
+                </path>
+              </svg>
+              <span>
+                En savoir plus sur notre accompagnement
+              </span>
+              </a>
+            </button>
+          </div>
+          <div class="box-r w-full md:w-[30%] h-full rounded-2xl overflow-hidden hidden md:flex">
+            <img class="w-full object-cover rounded-2xl" src="img/sec6/hennart-front-page-values-1.webp" alt="">
+          </div>
+        </div>
+        <div
+          class=" box2 bg-[#EFC0B9] w-[90%] h-[65%] flex flex-wrap md:flex-nowrap absolute top-[150%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-lg px-8 py-6">
+          <span
+            class="num-box w-[30px] h-[30px] border-[1px] border-black rounded-full flex justify-center items-center">2</span>
+          <div class="box-l w-full md:w-[70%] h-full flex flex-wrap items-center gap-5 px-20">
+            <h3 class="text-[30px] md:text-[50px] leading-[60px] w-[80%]">Une qualité maîtrisée</h3>
+            <p class="w-[80%] hidden md:block">Depuis 1922, la qualité et le savoir-faire de la Maison Hennart reposent
+              sur notre
+              capacité à transmettre nos compétences et à sans cesse se renouveler, innover. Nous sommes toujours en
+              quête de nouvelles saveurs et veillons chaque jour à la conformité de nos produits.
+            </p>
+            <button class="bg-white rounded-[40px] px-14 py-8 hidden md:block">
+              <a href="#" class="flex gap-[10px] items-center">
+                <svg width="19" height="19" class="fill-foreground" viewBox="0 0 18.9 19.1">
+                  <path
+                    d="m18.9,8.55h0s0,0,0,0c-2.41,0-4.13-1.19-5.33-2.76-1.22-1.59-1.87-3.53-2.08-4.81l-.16-.99-1.97.33.16.99c.25,1.53,1.01,3.79,2.47,5.69.42.55.92,1.07,1.47,1.54H0v2h13.45c-.55.47-1.05.99-1.47,1.54-1.46,1.91-2.21,4.17-2.47,5.69l-.16.99,1.97.33.16-.99c.21-1.27.86-3.21,2.08-4.81,1.2-1.57,2.92-2.76,5.33-2.76h0v-2h0s0,0,0,0Z">
+                  </path>
+                </svg>
+                <span>
+                  Découvrir notre politique qualité
+                </span>
+              </a>
+            </button>
+          </div>
+          <div class="box-r w-[30%] h-full rounded-2xl overflow-hidden hidden md:block">
+            <img class="w-full object-cover rounded-2xl" src="img/sec6/hennart-front-page-values-2.webp" alt="">
+          </div>
+        </div>
+        <div
+          class=" box3 bg-[#F7D38D] w-[90%] h-[65%] flex flex-wrap md:flex-nowrap absolute top-[150%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-lg px-8 py-6">
+          <span
+            class="num-box w-[30px] h-[30px] border-[1px] border-black rounded-full flex justify-center items-center">3</span>
+          <div class="box-l w-full md:w-[70%] h-full flex flex-wrap items-center gap-5 px-20">
+            <h3 class="text-[30px] md:text-[50px] leading-[60px] w-[80%]">Une équipe de passionnés à votre service</h3>
+            <p class="w-[80%] hidden md:block">Nous échangeons régulièrement avec nos fournisseurs et nos clients pour
+              maintenir la
+              qualité de nos
+              produits et de nos services. De la sélection à la mise en rayon, nos commerciaux vous accompagnent à
+              chaque étape.
+            </p>
+            <button class="bg-white rounded-[40px] px-14 py-8 hidden md:block">
+              <a href="#" class="flex gap-[10px] items-center">
+                <svg width="19" height="19" class="fill-foreground" viewBox="0 0 18.9 19.1">
+                  <path
+                    d="m18.9,8.55h0s0,0,0,0c-2.41,0-4.13-1.19-5.33-2.76-1.22-1.59-1.87-3.53-2.08-4.81l-.16-.99-1.97.33.16.99c.25,1.53,1.01,3.79,2.47,5.69.42.55.92,1.07,1.47,1.54H0v2h13.45c-.55.47-1.05.99-1.47,1.54-1.46,1.91-2.21,4.17-2.47,5.69l-.16.99,1.97.33.16-.99c.21-1.27.86-3.21,2.08-4.81,1.2-1.57,2.92-2.76,5.33-2.76h0v-2h0s0,0,0,0Z">
+                  </path>
+                </svg>
+                <span>
+                  En savoir plus sur notre accompagnement
+                </span>
+              </a>
+            </button>
+          </div>
+          <div class="box-r w-[30%] h-full rounded-2xl overflow-hidden hidden md:block">
+            <img class="w-full object-cover rounded-2xl" src="img/sec6/hennart-front-page-values-3.webp" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer
+      class="footer bg-[#20201E] w-full h-screen fixed top-full left-0 flex flex-wrap justify-center gap-[5px] py-6 px-12 md:py-20 md:px-32">
+      <div class="text-footer w-full opacity-0">
+        <h4 class="w-full text-[30px] md:text-[90px] text-white">Vous souhaitez <br>
+          devenir <span class="text-[#F7D38D]">revendeur</span></h4>
+      </div>
+      <div class="flex flex-wrap justify-between">
+        <p class="text-[20px] w-full md:w-1/2 text-[white] my-[15px] md:my-0">Que vous soyez un commerce de proximité (boucherie, épicerie fine,
+          caviste), un ambulant,
+          une crèmerie, une
+          GMS, nous sommes là pour vous. Nous adaptons notre offre et vous conseillons de la sélection à la mise en
+          rayon.</p>
+        <button class="bg-[#F7D38D] w-[250px] h-[80px] rounded-[40px]">
+          <a href="#">
+            Nous contacter
+          </a>
+        </button>
+      </div>
+      <div class="hr bg-white w-full h-[3px] my-4"></div>
+      <div class="me2 w-full flex justify-between">
+        <div class="social-footer w-full md:w-[60%] flex flex-wrap gap-4 py-8 *:text-white">
+          <div class="w-full flex items-center hover:text-[#F7D38D] transition-colors duration-200">
+            <span class="mr-2">
+              <i class="fa fa-instagram text-2xl hover:text-bg_yellow transition-all duration-300 cursor-pointer"></i>
+            </span>
+            <a class="text-lg hover:text-bg_yellow transition-all duration-300"
+              href="https://www.instagram.com/alireza_hasanpour_frontend">alireza_hasanpour_frontend@
+            </a>
+          </div>
+          <div class="w-full flex items-center hover:text-[#F7D38D] transition-colors duration-200">
+            <span class="mr-2">
+              <i class="fa fa-linkedin text-2xl hover:text-bg_yellow transition-all duration-300 cursor-pointer"></i>
+            </span>
+            <a class="text-lg hover:text-bg_yellow transition-all duration-300"
+              href="https://www.linkedin.com/in/alireza-hasanpour-frontend/">linkedin.com/in/alireza-hasanpour-frontend
+            </a>
+          </div>
+          <div class="w-full flex items-center hover:text-[#F7D38D] transition-colors duration-200">
+            <span class="mr-2">
+              <i class="fa fa-github text-2xl hover:text-bg_yellow transition-all duration-300 cursor-pointer"></i>
+            </span>
+            <a class="text-lg hover:text-bg_yellow transition-all duration-300"
+              href="https://github.com/alirezafrontend/">github.com/alirezafrontend
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- me -->
+  <div id="footer-me" class="hidden lg:flex">
+    <div>
+      <div>
+        <a href="https://www.instagram.com/alireza_hasanpour_frontend">
+          <i class="fa fa-instagram"></i>
+        </a>
+      </div>
+      <div>
+        <a href="https://github.com/alirezafrontend/">
+          <i class="fa fa-github"></i>
+        </a>
+      </div>
+      <div>
+        <a href="https://www.linkedin.com/in/alireza-hasanpour-frontend/">
+          <i class="fa fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+    <div>
+      <div class="cursor-pointer">
+        <img src="img/me.jpg" alt="">
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- main js -->
+
+  <script src="main.js"></script>
+</body>
+
+</html>
